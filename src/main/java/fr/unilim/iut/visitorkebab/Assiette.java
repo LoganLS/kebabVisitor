@@ -10,8 +10,4 @@ public class Assiette extends Kebab {
 	public List<Ingredient> getIngredients() {
 		return new LinkedList<>();
 	}
-
-	public boolean isPescetarien() {
-		return true;
-	}
 }

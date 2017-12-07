@@ -13,5 +13,12 @@ public abstract class Kebab{
 		}
 		return true;
 	};
-	public abstract boolean isPescetarien();
+	public boolean isPescetarien(){
+		for(Ingredient ingredient : this.getIngredients()){
+			if(!ingredient.accept(new VisiteurDeRegimePescetarien())){
+				return false;
+			}
+		}
+		return true;
+	};
 }
