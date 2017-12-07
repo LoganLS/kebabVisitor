@@ -1,6 +1,7 @@
 package fr.unilim.iut.visitorkebab.ingredients;
 
 import fr.unilim.iut.visitorkebab.Kebab;
+import fr.unilim.iut.visitorkebab.VisiteurDeRegimeVegetarien;
 
 public class Tomate extends Ingredient {
 
@@ -18,4 +19,7 @@ public class Tomate extends Ingredient {
 		return super.isPescetarien();
 	}
 
+	public void accept(VisiteurDeRegimeVegetarien v){
+    	v.visit(this);
+    }
 }

@@ -19,4 +19,7 @@ public class Assiette implements Kebab {
 		return true;
 	}
 
+	public void accept(VisiteurDeRegimeVegetarien v){
+    	v.visit(this);
+    }
 }

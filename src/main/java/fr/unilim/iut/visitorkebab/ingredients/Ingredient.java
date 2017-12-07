@@ -2,6 +2,7 @@ package fr.unilim.iut.visitorkebab.ingredients;
 
 import java.util.List;
 import fr.unilim.iut.visitorkebab.Kebab;
+import fr.unilim.iut.visitorkebab.VisiteurDeRegimeVegetarien;
 
 public abstract class Ingredient implements Kebab {
 
@@ -27,5 +28,7 @@ public abstract class Ingredient implements Kebab {
 	public boolean isPescetarien() {
 		return kebab.isPescetarien();
 	}
+	
+	public abstract void accept(VisiteurDeRegimeVegetarien v);
 
 }
