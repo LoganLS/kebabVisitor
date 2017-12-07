@@ -10,17 +10,12 @@ public class Sauce extends Ingredient {
 	}
 
 	@Override
-	public boolean isVegetarien() {
-		return super.isVegetarien();
-	}
-
-	@Override
 	public boolean isPescetarien() {
 		return super.isPescetarien();
 	}
 	
-	public void accept(VisiteurDeRegimeVegetarien v){
-    	v.visit(this);
+	public boolean accept(VisiteurDeRegimeVegetarien v){
+    	return v.visit(this);
     }
 
 }

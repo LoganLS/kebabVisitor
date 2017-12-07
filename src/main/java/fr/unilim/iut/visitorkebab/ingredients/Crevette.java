@@ -9,11 +9,6 @@ public class Crevette extends Ingredient {
         super(nom,kebab);
   
     }
-    
-    @Override
-    public boolean isVegetarien() {
-        return false;
-    }
 
     @Override
     public boolean isPescetarien() {
@@ -28,8 +23,8 @@ public class Crevette extends Ingredient {
         car son comportement n'apporte rien de nouveau ... ;-) */
     }
     
-    public void accept(VisiteurDeRegimeVegetarien v){
-    	v.visit(this);
+    public boolean accept(VisiteurDeRegimeVegetarien v){
+    	return v.visit(this);
     }
     
  

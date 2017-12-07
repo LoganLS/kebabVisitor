@@ -16,7 +16,7 @@ public class VisiteurDeRegimeVegetarien implements VisiteurDeRegime{
 	}
 	
 	public boolean visit(Fromage ingredientFromage){
-		return false;
+		return true;
 	}
 	
 	public boolean visit(Oignon ingredientOignon){
@@ -32,7 +32,7 @@ public class VisiteurDeRegimeVegetarien implements VisiteurDeRegime{
 	}
 	
 	public boolean visit(Sauce ingredientSauce){
-		return false;
+		return true;
 	}
 	
 	public boolean visit(Thon ingredientThon){
@@ -41,9 +41,5 @@ public class VisiteurDeRegimeVegetarien implements VisiteurDeRegime{
 	
 	public boolean visit(Tomate ingredientTomate){
 		return true;
-	}
-	
-	public boolean visit(Assiette ingredientAssiette){
-		return false;
 	}
 }

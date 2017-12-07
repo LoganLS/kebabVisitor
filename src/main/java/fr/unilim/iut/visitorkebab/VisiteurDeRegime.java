@@ -22,6 +22,4 @@ public interface VisiteurDeRegime {
 	public boolean visit(Thon ingredientThon);
 	
 	public boolean visit(Tomate ingredientTomate);
-	
-	public boolean visit(Assiette ingredientAssiette);
 }
